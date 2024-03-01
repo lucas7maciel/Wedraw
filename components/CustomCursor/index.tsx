@@ -1,8 +1,6 @@
-"use client";
+'use client';
+
 import "./index.css";
-import PenIcon from "@/public/tools/pen.svg";
-import EraserIcon from "@/public/tools/eraser.svg";
-import PickerIcon from "@/public/tools/picker.svg";
 import { CursorProps } from "./Cursor.model"
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -50,7 +48,7 @@ function CustomCursor(props: CursorProps) {
       } pointer-events-none`}
       style={{
         left: `${pos.x}px`,
-        top: `${pos.y}px`,
+        top: `${pos.y - size}px`,
         width: `${size}px`,
         height: `${size}px`,
       }}

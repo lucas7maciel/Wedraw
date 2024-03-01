@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export function Navbar() {
     return (
-        <header className="fixed top-0 flex items-center justify-center w-full pt-8 pb-4">
+        <header className="fixed top-0 flex items-center justify-center w-full pt-8 pb-4 z-30">
             <div className="px-12">
                 <Link href="/">
                     <img className="h-8" src="/logo.svg" />
