@@ -8,6 +8,18 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.hide_cursor {
+  cursor: none;
+}
+
+.rainbow-text {
+  background-image: linear-gradient(to right, 
+    violet, indigo, blue, green, yellow, orange, red);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
