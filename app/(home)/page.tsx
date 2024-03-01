@@ -2,22 +2,21 @@
 import Link from "next/link";
 import { DrawingTools } from "./drawingTools";
 
-//fazer picker funcionar    V
-//alternar entre tools      V
-//detalhes (hover, control z, centralizar nome, mudar no rolinho do mouse, ajeitar mouse, etc)
+//otimizar codigos
+//detalhes (hover, control z, centralizar nome, mudar no rolinho do mouse, ajeitar mouse, selectable, getc)
 
 export default function Home() {
 
   return (
     <>
-    <main className="min-h-screen h-full flex flex-col items-center justify-center text-center pt-20">
-      <h1 className="text-7xl font-bold select-none pb-6">WEDRAW</h1>
-      <h2 className="text-3xl font-semibold select-none px-12">
+    <main className="min-h-screen flex flex-col items-center justify-center text-center pt-20">
+      <h1 className="text-7xl font-bold rainbow-text select-none pointer-events-none pb-6 z-20">WEDRAW</h1>
+      <h2 className="text-3xl font-semibold select-none pointer-events-none px-12">
         MORE PEOPLE. DRAW WITH THE ONES YOU LOVE
       </h2>
 
       <Link href="/signup" className="relative z-20">
-        <p className="font-semibold text-3xl text-white select-none mt-5 mb-3 py-4 px-16 border-2 rounded-full bg-black">
+        <p className="font-semibold text-3xl text-white select-none mt-5 mb-3 py-4 px-16 border-2 rounded-full bg-black hover-button">
           Sign Up
         </p>
       </Link>

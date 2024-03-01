@@ -12,17 +12,23 @@ export function DrawingTools() {
 
   return (
     <>
-      <div className="flex justify-center gap-6">
+      <div className="flex justify-center items-center gap-6">
         <EraserIcon
-          className="h-8 w-8 cursor-pointer relative z-20"
+          className={`h-8 w-8 cursor-pointer relative z-20 tool ${
+            cursor == "eraser" ? "hover-tool" : ""
+          }`}
           onClick={() => setCursor("eraser")}
         />
         <PenIcon
-          className="h-8 w-8 cursor-pointer relative z-20"
+          className={`h-8 w-8 cursor-pointer relative z-20 tool ${
+            cursor == "pen" ? "hover-tool" : ""
+          }`}
           onClick={() => setCursor("pen")}
         />
         <PickerIcon
-          className="h-8 w-8 cursor-pointer relative z-20"
+          className={`h-8 w-8 cursor-pointer relative z-20 tool ${
+            cursor == "picker" ? "hover-tool" : ""
+          }`}
           onClick={() => setCursor("picker")}
         />
       </div>

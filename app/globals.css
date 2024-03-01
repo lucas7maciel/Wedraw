@@ -12,6 +12,20 @@
   cursor: none;
 }
 
+.tool {
+  transition: width 0.2s ease-in, height 0.2s ease-in;
+}
+
+.hover-tool {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.hover-button:hover {
+  transition: background-color 0.15s normal;
+  background-color: rgb(117, 117, 117);
+}
+
 .rainbow-text {
   background-image: linear-gradient(to right, 
     violet, indigo, blue, green, yellow, orange, red);
