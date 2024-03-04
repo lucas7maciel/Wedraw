@@ -27,8 +27,16 @@
 }
 
 .rainbow-text {
-  background-image: linear-gradient(to right, 
-    violet, indigo, blue, green, yellow, orange, red);
+  background-image: linear-gradient(
+    to right,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -38,11 +46,62 @@
   animation: showup 1s both;
 }
 
+/*Input animtions*/
+.message-error {
+  animation: error 0.7s normal ease-in-out;
+}
+
+@keyframes error {
+  15% {
+    border-color: red;
+    transform: translateX(1.5rem);
+  }
+
+  30% {
+    transform: translateX(-1.5rem);
+  }
+
+  45% {
+    transform: translateX(1.5rem);
+  }
+
+  60% {
+    transform: translateX(-1.5rem);
+  }
+
+  75% {
+    transform: translateX(1.5rem);
+  }
+
+  90% {
+    transform: translateX(-1.5rem);
+  }
+}
+
+.message-warning {
+  animation: warning 1.5s linear;
+}
+
+@keyframes warning {
+  25% {
+    border-color: rgb(255, 230, 0);
+  }
+
+  60% {
+    border-color: #E5E7EB;
+  }
+
+  85% {
+    border-color: rgb(255, 230, 0);
+  }
+}
+
 @keyframes showup {
   from {
     flex: 0;
-  } to {
-    flex:1 0 45%;
+  }
+  to {
+    flex: 1 0 45%;
   }
 }
 

@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { Name } from "./name";
+import { Password } from "./password";
+import { State } from "./state";
 
 export default function SignUp() {
   return (
@@ -12,12 +15,9 @@ export default function SignUp() {
         </p>
       </Link>
       </div>
-      <div className="min-h-screen w-full flex flex-col justify-center items-center text-center" id="name">
-        <h1 className="text-5xl font-bold">What's Your Name?</h1>
-        <h2 className="text-3xl font-semibold mt-3">Please inform name and surname</h2>
-
-        <input type="text" placeholder="Enter your name" className="w-1/2 h-14 text-2xl px-3 text-center mt-6 border-4 rounded-xl" />
-      </div>
+      <Name />
+      <Password />
+      <State />
     </div>
   );
 }
