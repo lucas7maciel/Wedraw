@@ -17,8 +17,8 @@
 }
 
 .hover-tool {
-  width: 2.5rem;
-  height: 2.5rem;
+  /*width: 2.5rem;
+  height: 2.5rem;*/
 }
 
 .hover-button:hover {
@@ -47,13 +47,14 @@
 }
 
 /*Input animtions*/
-.message-error {
+.anim-error {
   animation: error 0.7s normal ease-in-out;
 }
 
 @keyframes error {
   15% {
     border-color: red;
+    outline: red;
     transform: translateX(1.5rem);
   }
 
@@ -78,7 +79,18 @@
   }
 }
 
-.message-warning {
+.message-error {
+  animation: text-error 1s normal ease-in-out;
+}
+
+@keyframes text-error {
+  0% {
+    color: red;
+  }
+  100% {color: red}
+}
+
+.anim-warning {
   animation: warning 1.5s linear;
 }
 
@@ -88,7 +100,7 @@
   }
 
   60% {
-    border-color: #E5E7EB;
+    border-color: #e5e7eb;
   }
 
   85% {

@@ -17,7 +17,7 @@ export default function Home() {
 
       <Link href="/signin" className="relative z-20">
         <p className="font-semibold text-3xl text-white select-none mt-5 mb-3 py-4 px-16 border-2 rounded-full bg-black hover-button">
-          Sign Up
+          Sign In
         </p>
       </Link>
       <DrawingTools />
