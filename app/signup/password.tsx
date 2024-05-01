@@ -42,13 +42,13 @@ export function Password() {
 
   return (
     <div
-      className="min-h-screen w-full flex flex-col justify-center items-center text-center pt-14"
+      className="relative z-20 min-h-screen w-full flex flex-col justify-center items-center text-center pt-14"
       id="password"
     >
       <h1 className="text-5xl font-bold">What about your password?</h1>
 
       <input
-        type="text"
+        type="password"
         value={value}
         onChange={(e) => setValue(e.target.value)}
         onKeyDown={(e: KeyboardEvent<HTMLInputElement>) => {

@@ -42,7 +42,7 @@ export function Name() {
 
   return (
     <div
-      className="min-h-screen w-full flex flex-col justify-center items-center text-center pt-14"
+      className="relative z-20 min-h-screen w-full flex flex-col justify-center items-center text-center pt-14"
       id="name"
     >
       <h1 className="text-5xl font-bold">What's Your Name?</h1>

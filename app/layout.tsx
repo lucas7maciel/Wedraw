@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
-import "./globals.css";
 import { Navbar } from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import "./globals.css";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -21,7 +20,7 @@ export default function RootLayout({
       <head>
         <title>Wedraw</title>
       </head>
-      <body className={nunito.className}><Navbar />{children}<Footer /></body>
+      <body className={nunito.className}><Navbar />{children}</body>
     </html>
   );
 }
