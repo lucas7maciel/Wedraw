@@ -9,7 +9,7 @@ export default function Intro(props: SecCompProps) {
 
   return (
     <div
-      className="section min-h-screen min-w-screen flex flex-col justify-center items-center text-center"
+      className="section min-h-screen min-w-screen flex flex-col justify-center items-center text-center pt-8"
       ref={props.reference}
       onFocus={() => ref.current?.focus()}
       tabIndex={props.index}
