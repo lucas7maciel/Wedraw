@@ -46,41 +46,47 @@
   animation: showup 1s both;
 }
 
-/*Input animtions*/
-.anim-error {
-  animation: error 0.7s normal ease-in-out;
+/* Input checking */
+/* Dps ajeitar os nomes das classes */
+.warning_input {
+  animation: warning 1.5s linear;
 }
 
-@keyframes error {
-  15% {
-    border-color: red;
-    outline: red;
-    transform: translateX(1.5rem);
-  }
-
-  30% {
-    transform: translateX(-1.5rem);
-  }
-
-  45% {
-    transform: translateX(1.5rem);
-  }
-
-  60% {
-    transform: translateX(-1.5rem);
-  }
-
-  75% {
-    transform: translateX(1.5rem);
-  }
-
-  90% {
-    transform: translateX(-1.5rem);
-  }
+.error_input {
+  outline: yellow;
+  animation: shake 1s ease-in-out;
 }
 
 .message-error {
   animation: text-error 1s normal ease-in-out;
+}
+
+/** Animations **/
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  5% {
+    border: solid 2px red;
+  }
+  20% {
+    transform: translateX(-12px);
+  }
+  40% {
+    transform: translateX(12px);
+  }
+  60% {
+    transform: translateX(-12px);
+  }
+  80% {
+    transform: translateX(12px);
+  }
+  90% {
+    border: solid 2px red;
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes text-error {
@@ -88,10 +94,6 @@
     color: red;
   }
   100% {color: red}
-}
-
-.anim-warning {
-  animation: warning 1.5s linear;
 }
 
 @keyframes warning {
@@ -117,6 +119,7 @@
   }
 }
 
+/** Queries **/
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
